@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="edu.illinois.engr.web.adasgup4.banshil.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/label"
+        android:textSize="16dp"
+        android:text="Hello! This simple app will help you send and receive information using an HC-05 bluetooth module."/>
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/label"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:text="The input from the HC-05 will be displayed as a toast"/>
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/label"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:text="Any status messages will be displayed here:"/>
+
+    <EditText
+        android:id="@+id/label"
+        android:hint="Text will show up here"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"
+        android:background="@android:drawable/editbox_background"
+        />
+
+    <TextView
+        android:id="@+id/info4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:text="Text typed into the following text box will be sent to the HC-05 when the ~Send~ button is clicked:"/>
+
+    <EditText
+        android:id="@+id/entry"
+        android:hint="Type text here"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"
+        android:background="@android:drawable/editbox_background"
+        />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/open"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Open" />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/send"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Send" />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/close"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Close" />
+
+    <Button style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/settings"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Turn on bluetooth" />
+
+</LinearLayout>
